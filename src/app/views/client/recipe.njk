@@ -1,0 +1,38 @@
+{% extends "client/layout.njk" %}
+
+{% block content %}
+
+</header>
+
+<img id="imgReceipt" src={{receipt.image}}>
+
+<p id="foodNameofReceipt">
+    {{receipt.title}}
+</p>
+
+<p id="authorNameofReceipt">{{receipt.author}}</p>
+
+<p class="titlesOfReceipt">Ingredientes
+    <span id="visibilityLinksINGREDIENTS"><span id="showINGREDIENTS" class="hiddenLink">mostrar</span><span id="hideINGREDIENTS" class="hiddenLink" hidden="hidden">esconder</span></span>
+
+    <ul id="contentINGREDIENTS" class="listOfReceipt" hidden="hidden">
+        {% for list in receipt.ingredients %}
+            <li>{{list}};</li>
+        {% endfor %}
+    </ul>
+
+    <p class="titlesOfReceipt">Modo de Preparo
+        <span id="visibilityLinksSTEPS"><span id="showSTEPS" class="hiddenLink">mostrar</span><span id="hideSTEPS" class="hiddenLink" hidden="hidden">esconder</span></span></p>
+
+    <ul id="contentSTEPS" class="listOfReceipt" hidden="hidden">
+        {% for list in receipt.preparation %}
+            <li>{{list}}</li>
+        {% endfor %}
+    </ul>
+
+    <p class="titlesOfReceipt">Informações adicionais
+        <span id="visibilityLinksINFORMATION"><span id="showINFORMATION" class="hiddenLink">mostrar</span><span id="hideINFORMATION" class="hiddenLink" hidden="hidden">esconder</span></span></p>
+
+    <span id="contentINFORMATION" class="textOfReceipt" hidden="hidden">{{receipt.information}}</span>
+
+{% endblock %}

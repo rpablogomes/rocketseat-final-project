@@ -1,0 +1,34 @@
+{% extends "client/layout.njk" %}
+
+{% block content%}
+
+    <div class="menuLast">
+        <form class="filterForm" action="/recipes" method="GET">
+            <input class="filterInput" type="text" name="filter" placeholder="Buscar uma receita">
+            <button class="filterButton" type="submit">Buscar</button>
+        </form>
+    </div>
+
+</header>
+
+{% if pagination.filter %}
+<div class="paragraph">Buscando por: "{{pagination.filter}}"</div>
+{% endif %}
+
+<div id="receipts">
+
+    {% for recipe in recipes %}
+
+        <a class="card" href='/recipes/{{recipe.id}}'>
+            <img class="foodImage" src={{recipe.image}} alt="image">
+            <span class="foodName">{{recipe.title}}<br/></span>
+            <span class="cooker">por
+                {{recipe.chefs_name}}</span>
+        </a>
+
+    {% endfor %}
+</div>
+<div>
+    <div id="pagination" data-total="{{pagination.total}}" data-page="{{pagination.page}}" data-filter="{{pagination.filter}}" onload="pagination()"></div>
+</div>
+{% endblock %}

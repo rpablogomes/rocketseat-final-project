@@ -1,0 +1,21 @@
+{% extends "admin/admin_layout.njk" %}
+
+{% block content %}
+
+    <h1>Chefs</h1>
+
+    <div class="Chefs">
+        {% for chef in chefs %}
+            <div class="cardChef">
+                <div>
+                    <img class="imageChef" src="{{chef.avatar_url}}">
+                </div>
+                <div>
+                    <div class="nameChef">{{chef.name}}</div>
+                    <a href="/admin/chef/{{chef.id}}">visualizar</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    {% endblock %}

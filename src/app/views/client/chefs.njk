@@ -1,0 +1,19 @@
+{% extends "client/layout.njk" %}
+
+{% block content %}
+</header>
+<div class="cardChefs">
+    {% for chef in chefs %}
+        <div class="cardChef">
+            <div>
+                <img class="imageChef" src="{{chef.avatar_url}}">
+            </div>
+            <div>
+                <div class="nameChef">{{chef.name}}</div>
+                <div class="totalChef">{{chef.total_recipes}}
+                    receitas</div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

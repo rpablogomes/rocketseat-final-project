@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foodfy</title>
+        <link rel="stylesheet" type="text/css" href="/admin_style.css">
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <header >
+
+            <img id="logo" src=/midias/logo_admin.png alt="img">
+            <a class="menu" href="/admin/recipes">Receitas</a>
+            <a class="menu" href="/admin/chefs">Chefs</a>
+
+    </header>
+
+    <body>
+
+        <main id="content">
+
+            {% block content %}{% endblock %}
+
+        </main>
+    </body>
+
+    <script type="text/javascript" src="/admin_script.js"></script>
+
+</html>

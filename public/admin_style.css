@@ -1,0 +1,457 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    text-align: left;
+}
+
+main {
+    margin: 0 16.4%;
+}
+
+#content {
+    min-width: 700px;
+}
+
+header {
+    margin: 0 0 30px 0;
+    padding: 0 0 0 16.4%;
+    text-align: left;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: #111111;
+}
+
+#logo {
+    margin: 27px 50px 27px 0;
+    width: 90.6px;
+    height: 26.9px;
+}
+
+.menu {
+    height: auto;
+    width: auto;
+    display: inline-flex;
+    margin: auto 30px auto 0;
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px
+}
+
+.card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+h1 {
+    font-size: 24px;
+    color: #111111;
+    margin: 55px 0 24px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #111111;
+    margin: 30px 0 4px 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    color: #777777;
+    margin: 4px 0 31px 0;
+}
+
+h4 {
+    font-size: 24px;
+    color: #111111;
+    margin: 41px 0 19px 0;
+}
+
+.image {
+    border-radius: 8.57px;
+    width: 172px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.secondFractionOfCard {
+    text-align: left;
+}
+
+.foodName {
+    font-size: 18px;
+    color: #111111;
+    margin-bottom: 5px;
+}
+
+.authorName {
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.recipeImg {
+    height: 280px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.recipeAuthor {
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    color: #777777;
+}
+
+.recipeTitle {
+    font-size: 24px;
+    color: #111111;
+}
+
+li {
+    list-style-type: none;
+    margin: none;
+}
+
+.recipeTop{
+    display: grid;
+    grid-template-columns: 1fr 140px;
+    width: 100%;
+    margin: 0 0 1px
+}
+
+.recipeText {
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+
+.lastText {
+    margin: 0 0 50px;
+}
+
+.button {
+    border-radius: 4px;
+    background: #6558C3 100%;
+    border: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    height: 37px;
+    width: 136px;
+    margin: 55px 0 24px auto;
+    text-align: center;
+    font-weight: bold
+}
+
+.Top {
+    display: grid;
+    grid-template-columns: 80% 1fr;
+    width: 100%;
+    margin: 0 0 1px
+}
+
+.createText {
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 30px 0 10px 0
+}
+
+.createLink {
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 15px 0 10px 0;
+    font-size: 16px;
+    color: #6558C3
+}
+
+.photos-upload
+{
+    width: 149px;
+    height: 149px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    margin: 0 0 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777777;
+}
+
+
+.photos-upload input,
+.photos-upload img{
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+    width: 149px;
+    height: 149px;
+    cursor: pointer;
+}
+
+.createInput,.register {
+    width: 100%;
+    height: 49px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    margin: 0 0 15px 0;
+}
+
+.LASTcreateInput {
+    width: 100%;
+    height: 257px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    margin: 0 0 30px 0
+}
+
+.EditRecipeTop {
+    display: grid;
+    grid-template-columns: 1fr 95px 140px;
+    width: 100%;
+    margin: 0 0 1px
+}
+
+.Deletebutton {
+    border-radius: 4px;
+    background: #DC4747 100%;
+    border: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    height: 37px;
+    width: 92px;
+    margin: 55px 0 24px auto;
+    text-align: center;
+    font-weight: bold
+}
+
+.img-chef{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto -30px
+}
+.chef{
+    text-align:center
+}
+
+.Chefs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.cardChef{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.imageChef{
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+}
+
+.nameChef{
+    font-size: 18px;
+}
+
+.totalChef{
+    font-size: 14px;
+    text-align: left;
+    opacity: 70%;
+    top: 10px;
+    margin: 5px 0 0 0;
+}
+
+.cardsChef {
+    margin-top: 50px;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    top: 300px;
+    bottom: 300px;
+    column-gap: 20px;
+}
+
+.foodImageChef {
+    width: 172px;
+    height: 80px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.foodNameChef {
+    font-size: 18px;
+    margin-bottom: 5px
+}
+
+.cookerChef {
+    font: 14px;
+    color: #777777;
+    margin-bottom: 5px
+}
+
+/* Photo */
+
+#photos-preview{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.photo{
+    position: relative;
+}
+
+.photo img{
+    position: relative;
+        overflow: hidden;
+        opacity: 1;
+        width: 149px;
+        height: 149px;
+        cursor: pointer;
+    }
+
+.photo i{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: rgba(255, 255, 255, 0.8);
+    color: red;
+
+    width: 149px;
+    height: 149px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 500%;
+    cursor: pointer;
+
+    opacity: 0;
+
+    transition: 200ms;
+}
+
+.photo:hover i{
+    opacity: 1;
+}
+
+/* lightbox product gallery */
+.highlight .lightbox-target {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, .7);
+    z-index: 100;
+
+    top: -100%;
+    left: 0;
+
+    opacity: 1;
+
+    transition: opacity 400m
+}
+.highlight .lightbox-target img{
+    margin: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background-color: white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .3 );
+
+    width: 90%;
+    height: 90%;
+
+    object-fit: contain;
+}
+
+.highlight a.lightbox-close {
+    width: 50px;
+    height: 50px;
+
+    background: white;
+
+    position: absolute;
+    top: -80px;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 400ms
+}
+
+/* product gallery */
+ 
+.gallery{
+    width: 100%;
+}
+
+.gallery img{
+    width: 100%;
+}
+
+.highlight > img {
+    width: 100%;
+    height: 280px;
+
+    border: 1px solid #efefef;
+
+    cursor: zoom-in;
+}
+
+.gallery-preview {
+    display: flex;
+    justify-content: flex-end;
+    grid-gap: 5px;
+    width: 100%;
+    position: relative;
+}
+
+.gallery-preview img {
+    height: 100px;
+    width: 100px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    opacity: 0.6;
+
+    cursor: pointer;
+}
+
+.gallery-preview img:hover,
+.gallery-preview img.active{
+    opacity: 1;
+    transition: 200ms
+}
+

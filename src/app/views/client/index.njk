@@ -1,0 +1,40 @@
+{% extends "client/layout.njk" %}
+
+{% block content %}
+
+    <div class="menuLast">
+        <form class="filterForm" action="/receipts" method="GET">
+            <input class="filterInput" type="text" name="filter" placeholder="Buscar uma receita">
+            <button class="filterButton" type="submit">Buscar</button>
+        </form>
+    </div>
+
+</header>
+
+<div id="presentation">
+    <div id="textOfPresentation">
+        <p id="first">As melhores receitas</p>
+        <p id="second">Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
+        </p>
+    </div>
+    <div id="imageOfPresentantion">
+        <img id="chef" src=/midias/chef.png alt="image">
+    </div>
+</div>
+
+<h2>Mais Acessadas</h2>
+
+<div id="cards">
+
+    {% for recipe in recipes %}
+        <a class="card" href='/recipes/{{recipe.id}}'>
+            <img class="foodImage" src={{recipe.image}} alt="image">
+            <span class="foodName">{{recipe.title}}<br/></span>
+            <span class="cooker">por
+                {{recipe.chefs_name}}</span>
+        </a>
+    {% endfor %}
+
+</div>
+
+{% endblock %}
